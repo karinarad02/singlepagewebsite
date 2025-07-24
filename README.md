@@ -1,148 +1,117 @@
-📄 Hands-On Lab: Single Page Portfolio Website
-This is a hands-on project where you will build and customize a single-page portfolio website using HTML, CSS, and JavaScript.
+# 📄 Hands-On Lab: Single Page Portfolio Website
 
-💾 Saving Your Progress
+Build and customize a single-page portfolio website using **HTML**, **CSS**, and **JavaScript**.
+
+
+## 💾 Saving Your Progress
+
 To download your project from the lab environment:
 
-Right-click the project folder.
+1. Right-click the project folder.
+2. Select **Download** or **Export**.
+3. Save it to your local machine for backup or submission.
 
-Select Download or Export (based on your interface).
 
-Save it to your local system for backup and future use.
+## 🧰 Prework
 
-🧰 Prework
-Before starting the tasks, ensure you have:
+Before starting the tasks:
 
-A working VS Code environment.
+- Ensure a working **VS Code** environment.
+- Install the **Live Server** extension.
+- Be familiar with basic **HTML**, **CSS**, and **JavaScript**.
 
-The Live Server extension installed.
 
-Basic understanding of HTML, CSS, and JavaScript.
+## ✨ Project Tasks
 
-✨ Creating the Single Page Website
-Follow these steps to customize the portfolio website.
+### ✅ Task 1: Customize Profile Name
 
-✅ Task Checklist
-🔹 Task 1: Customize Profile Name
-In index.html, replace Jane Doe with your name in the profile_name class.
+- In `index.html`, replace **Jane Doe** with your own name in the `profile_name` class.
+- In `style.css`, update the `.profile_name` class:
+  - Add a **light background color**.
+  - Set `font-size: 30px`.
+- Save and run using **Live Server**.
+- 📸 Save screenshot as `profile_name.png`.
 
-In style.css, edit .profile_name:
 
-Add a light background color of your choice.
+### ✅ Task 2: Complete Navigation Bar
 
-Set the font-size to 30px (or suitable size).
+- Add the following sections to the navigation bar: `Skills`, `Projects`, `Recommendations`.
+- In `style.css`, update `.topmenu:hover`:
+  ```css
+  font-weight: bolder;
+  text-decoration: underline;
+- Save and test using **Live Server**
+- 📸 Screenshot and save as `nav_bar.png`
 
-Save and open with Live Server.
 
-📸 Take a screenshot and name it profile_name.png.
+## ✅ Task 3 — Customize the "About Me" Section
 
-🔹 Task 2: Complete Navigation Bar
-In index.html, add links to:
+- Modify the **About Me** section:
+  - Replace the placeholder name with your own.
+  - Use a **unique profile image** (not the sample one).
+  - Add a **brief summary** about yourself (or a fictitious persona).
 
-Skills
+- Save and test using **Live Server**
+- 📸 Screenshot and save as `aboutme.png`
 
-Projects
 
-Recommendations
+## ✅ Task 4 — Add More Skills
 
-In style.css, update .topmenu:hover:
+- In the **Skills** section:
+  - Add **at least 3 more skills**.
+  - Each should include an appropriate **logo** and **description**.
 
-Add font-weight: bolder;
+- Save and test using **Live Server**
+- 📸 Screenshot and save as `skills.png`
 
-Add text-decoration: underline;
 
-Save and test with Live Server.
+## ✅ Task 5 — Customize Project Details
 
-📸 Screenshot and name it nav_bar.png.
+- In the **Projects** section:
+  - Replace the default project headings and descriptions with **your own (or fictitious)**.
+  - Use the `project-card` class.
 
-🔹 Task 3: About Me Section
-Replace placeholder content with:
+- Save and test using **Live Server**
+- 📸 Screenshot and save as `projects.png`
 
-Your (or fictitious) name
 
-A unique profile image
+## ✅ Task 6 — Add Recommendations
 
-A short bio or summary
+- In the **Recommendations** section:
+  - Replace the 3 default entries with **3 new fictitious recommendations** (25–30 words each).
+  - Use the `recommendation` class for styling.
 
-Save and test with Live Server.
+- Save and test using **Live Server**
+- 📸 Screenshot and save as `recommendations.png`
 
-📸 Screenshot and name it aboutme.png.
 
-🔹 Task 4: Add Skills
-Add at least 3 more skills to the Skills section (total 5+).
+## ✅ Task 7 — Add a New Recommendation via Button
 
-Include appropriate logos and skill descriptions.
+- Ensure the `addRecommendation()` function is triggered by clicking the **Recommend** button.
+- Enter text in the input field — it should be **added to the list** of recommendations dynamically.
 
-Save and test with Live Server.
+- Save and test using **Live Server**
+- 📸 Screenshot and save as `new_recommendation.png`
 
-📸 Screenshot and name it skills.png.
 
-🔹 Task 5: Customize Projects
-In the Projects section:
+## ✅ Task 8 — Add Home Button Scroll-to-Top Feature
 
-Replace default project headings and details with your own or fictitious ones.
+- In `index.html`, find the line:
+  ```html
+  <a href="#home">
+- Add the following code inside it to make it functional and to take you to the start of the page when you click on the home icon:
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+- Save and test using **Live Server**
+- 📸 Screenshot and save as `home_icon.png`
 
-Use the .project-card class.
+## ✅ Task 9 — Add Popup Confirmation for Recommendation Submission
 
-Save and test with Live Server.
+- Open `script.js` and find the `addRecommendation()` function.
+- Add the following code inside the addRecommendation() function in the space provided, so that the showPopup() function is invoked onyl when a recommendation is submitted:
+  showPopup(true);
+- Go to div with id popup and add an apporpiate text confirmation message in the space provided
+- Save and test using **Live Server**
+- 📸 Screenshot and save as `popup.png`
 
-📸 Screenshot and name it projects.png.
-
-🔹 Task 6: Add Recommendations
-Replace the 3 sample recommendations with your own (25–30 words each).
-
-Use the .recommendation class.
-
-Save and test with Live Server.
-
-📸 Screenshot and name it recommendations.png.
-
-🔹 Task 7: Add a New Recommendation via Form
-Use the text box and button to submit a new recommendation.
-
-Confirm that:
-
-addRecommendation() adds it to the list.
-
-The new recommendation appears dynamically.
-
-Save and test with Live Server.
-
-📸 Screenshot and name it new_recommendation.png.
-
-🔹 Task 8: Add Scroll-to-Top Icon
-In index.html, locate <a href="#home">.
-
-Paste this SVG code inside:
-
-html
-Copy
-Edit
-
-Save and test with Live Server.
-
-📸 Screenshot the bottom of the page and name it home_icon.png.
-
-🔹 Task 9: Add Popup Confirmation
-In script.js, add this inside addRecommendation() when a recommendation is submitted:
-
-js
-Copy
-Edit
-showPopup(true);
-In index.html, locate the <div id="popup"> and add a confirmation message like:
-
-html
-Copy
-Edit
-<p>Thank you for your recommendation!</p>
-Save and test with Live Server.
-
-📸 Screenshot and name it popup.png.
-
-📝 Submission Guidelines
-Ensure all tasks are complete.
-
-Capture and save all required screenshots.
-
-Download your full project folder before submission.
